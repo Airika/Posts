@@ -14,13 +14,15 @@
 		03E56048181753F600915628 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E56047181753F600915628 /* main.m */; };
 		03E5604C181753F600915628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E5604B181753F600915628 /* AppDelegate.m */; };
 		03E5604F181753F600915628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E5604D181753F600915628 /* Main.storyboard */; };
-		03E56052181753F600915628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E56051181753F600915628 /* ViewController.m */; };
 		03E56054181753F600915628 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E56053181753F600915628 /* Images.xcassets */; };
 		03E5605B181753F600915628 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E5605A181753F600915628 /* XCTest.framework */; };
 		03E5605C181753F600915628 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E5603B181753F600915628 /* Foundation.framework */; };
 		03E5605D181753F600915628 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E5603F181753F600915628 /* UIKit.framework */; };
 		03E56065181753F600915628 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03E56063181753F600915628 /* InfoPlist.strings */; };
 		03E56067181753F600915628 /* MVC_PostsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E56066181753F600915628 /* MVC_PostsTests.m */; };
+		03E560721817550200915628 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E560711817550200915628 /* TableViewController.m */; };
+		03E560751817599C00915628 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E560741817599C00915628 /* Post.m */; };
+		03E560781817900C00915628 /* Custom Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E560771817900C00915628 /* Custom Cell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038A35AE18180DCA00E34695 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		03E56038181753F600915628 /* MVC Posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC Posts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E5603B181753F600915628 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03E5603D181753F600915628 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +48,17 @@
 		03E5604A181753F600915628 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03E5604B181753F600915628 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03E5604E181753F600915628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03E56050181753F600915628 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		03E56051181753F600915628 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03E56053181753F600915628 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03E56059181753F600915628 /* MVC PostsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC PostsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E5605A181753F600915628 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		03E56062181753F600915628 /* MVC PostsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVC PostsTests-Info.plist"; sourceTree = "<group>"; };
 		03E56064181753F600915628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03E56066181753F600915628 /* MVC_PostsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVC_PostsTests.m; sourceTree = "<group>"; };
+		03E560701817550200915628 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		03E560711817550200915628 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		03E560741817599C00915628 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		03E560761817900C00915628 /* Custom Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Custom Cell.h"; sourceTree = "<group>"; };
+		03E560771817900C00915628 /* Custom Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Custom Cell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +120,9 @@
 			children = (
 				03E5604A181753F600915628 /* AppDelegate.h */,
 				03E5604B181753F600915628 /* AppDelegate.m */,
+				03E560701817550200915628 /* TableViewController.h */,
+				03E560711817550200915628 /* TableViewController.m */,
 				03E5604D181753F600915628 /* Main.storyboard */,
-				03E56050181753F600915628 /* ViewController.h */,
-				03E56051181753F600915628 /* ViewController.m */,
 				03E56053181753F600915628 /* Images.xcassets */,
 				03E56042181753F600915628 /* Supporting Files */,
 			);
@@ -126,6 +132,10 @@
 		03E56042181753F600915628 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03E560761817900C00915628 /* Custom Cell.h */,
+				03E560771817900C00915628 /* Custom Cell.m */,
+				038A35AE18180DCA00E34695 /* Post.h */,
+				03E560741817599C00915628 /* Post.m */,
 				03E56043181753F600915628 /* MVC Posts-Info.plist */,
 				03E56044181753F600915628 /* InfoPlist.strings */,
 				03E56047181753F600915628 /* main.m */,
@@ -199,6 +209,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Erika Martinez";
 				TargetAttributes = {
+					03E56037181753F600915628 = {
+						DevelopmentTeam = CH26YQN75F;
+					};
 					03E56058181753F600915628 = {
 						TestTargetID = 03E56037181753F600915628;
 					};
@@ -249,9 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03E56052181753F600915628 /* ViewController.m in Sources */,
 				03E5604C181753F600915628 /* AppDelegate.m in Sources */,
+				03E560781817900C00915628 /* Custom Cell.m in Sources */,
+				03E560721817550200915628 /* TableViewController.m in Sources */,
 				03E56048181753F600915628 /* main.m in Sources */,
+				03E560751817599C00915628 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +393,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVC Posts/MVC Posts-Prefix.pch";
 				INFOPLIST_FILE = "MVC Posts/MVC Posts-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVC Posts/MVC Posts-Prefix.pch";
 				INFOPLIST_FILE = "MVC Posts/MVC Posts-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +481,7 @@
 				03E5606C181753F600915628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03E5606D181753F600915628 /* Build configuration list for PBXNativeTarget "MVC PostsTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +490,7 @@
 				03E5606F181753F600915628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
