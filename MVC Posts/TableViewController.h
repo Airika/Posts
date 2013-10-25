@@ -10,6 +10,6 @@
 
 @interface TableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic) NSMutableArray *characters;
+@property (nonatomic) NSArray *characters;
 
 @end

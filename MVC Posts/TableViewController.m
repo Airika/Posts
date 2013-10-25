@@ -12,12 +12,6 @@
 
 @interface TableViewController ()
 
-{
-    NSArray *title;
-    NSArray *content;
-    NSArray *userName;
-}
-
 @end
 
 @implementation TableViewController
@@ -38,11 +32,17 @@
     self.tableView.dataSource = self;
     self.tableView.delegate =self;
     
+    Post *post1 = [[Post alloc] init];
+    post1.title = @"Chosen Four";
+    post1.userName = @"Ness";
+    post1.content = @"Smash!";
     
     
-    title = [[NSArray alloc] initWithObjects:@"Chosen Four", nil];
-    userName = [[NSArray alloc] initWithObjects:@"Ness",@"Paula",@"Poo",@"Jeff", nil];
-    content = [[NSArray alloc] initWithObjects:@"Smash!",@"Pray",@"Meditate",@"Rocket Bottle", nil];
+    self.characters = @[post1];
+//    
+//    title = [[NSArray alloc] initWithObjects:@"Chosen Four", nil];
+//    userName = [[NSArray alloc] initWithObjects:@"Ness",@"Paula",@"Poo",@"Jeff", nil];
+//    content = [[NSArray alloc] initWithObjects:@"Smash!",@"Pray",@"Meditate",@"Rocket Bottle", nil];
 
 
     
@@ -69,7 +69,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return userName.count;
+    return self.characters.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -80,10 +80,12 @@
     if (!Cell) {
         Cell = [[Custom_Cell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: CellIdentifier];
     }
-{
-    Cell.title.text = [title objectAtIndex: indexPath.row];
-    Cell.content.text = [content objectAtIndex: indexPath.row];
-    Cell.userName.text = [userName objectAtIndex: indexPath.row];
+
+    
+    
+    Cell.title.text = [[self.characters objectAtIndex: indexPath.row] title];
+    Cell.content.text = [[self.characters objectAtIndex: indexPath.row] title];
+    Cell.userName.text = [[self.characters objectAtIndex: indexPath.row] title];
     
     return Cell;
 }
@@ -138,5 +140,5 @@
 }
 
  */
-}
+
 @end
