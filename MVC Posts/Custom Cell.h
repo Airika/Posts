@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Post.h"
+
 
 @interface Custom_Cell : UITableViewCell
+
+@property (nonatomic, strong) Post *post;
+
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 @property (weak, nonatomic) IBOutlet UILabel *content;
