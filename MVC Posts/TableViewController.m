@@ -37,8 +37,12 @@
     post1.userName = @"Ness";
     post1.content = @"Smash!";
     
+    Post *post2 = [[Post alloc] init];
+    post2.title = @"Chosen Four";
+    post2.userName = @"Ness";
+    post2.content = @"Smash!";
     
-    self.characters = @[post1];
+    self.characters = @[post1, post2];
 //    
 //    title = [[NSArray alloc] initWithObjects:@"Chosen Four", nil];
 //    userName = [[NSArray alloc] initWithObjects:@"Ness",@"Paula",@"Poo",@"Jeff", nil];
